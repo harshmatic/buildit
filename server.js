@@ -20,11 +20,11 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('*', middleware);
-
-app.listen(process.env.PORT || 3000, (err) => {
+let port = process.env.PORT ? process.env.PORT :3000;
+app.listen(port || 3000, (err) => {
   if(err) {
     console.error(err);
   } else {
-    console.info('Listening at http://localhost:'+process.env.PORT || '3000');
+    console.info('Listening at http://localhost:'+port);
   }
 });
