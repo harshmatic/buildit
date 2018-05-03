@@ -21,10 +21,10 @@ else if (process.env.NODE_ENV === 'production') {
 
 app.get('*', middleware);
 
-app.listen(8080, (err) => {
+app.listen(process.env.PORT || 3000, (err) => {
   if(err) {
     console.error(err);
   } else {
-    console.info('Listening at http://localhost:8080');
+    console.info('Listening at http://localhost:'+process.env.PORT || '3000');
   }
 });
