@@ -35,7 +35,10 @@ function Home(state = {
         ...state,
         isFetching: false,
         didInvalidate: false,
-        error: action.error
+        error: action.error,
+        tempratures: [],
+        city: {}
+
       };
     default:
       return state;
