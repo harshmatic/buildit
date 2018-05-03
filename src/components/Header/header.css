@@ -1,0 +1,23 @@
+input[type=text] {
+    width: 20%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #B1EBFF;
+}
+.btn:hover {
+    background-color: #63c6e8;
+}
