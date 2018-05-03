@@ -21,7 +21,7 @@ else if (process.env.NODE_ENV === 'production') {
 
 app.get('*', middleware);
 
-app.listen(8080, '0.0.0.0', (err) => {
+app.listen(8080, (err) => {
   if(err) {
     console.error(err);
   } else {
