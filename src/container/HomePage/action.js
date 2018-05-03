@@ -28,7 +28,7 @@ export const receivePostsError = error => (
   });
 
 export const fetchPosts = search => (
-  dispatch => api(`http://api.openweathermap.org/data/2.5/forecast?APPID=${API_KEY}&units=metric&q=${search}`)
+  dispatch => api(`https://api.openweathermap.org/data/2.5/forecast?APPID=${API_KEY}&units=metric&q=${search}`)
     .then(
       json =>
         dispatch(receivePosts(json, search)),

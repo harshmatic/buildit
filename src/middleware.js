@@ -25,7 +25,8 @@ export default (req, res) => {
             </body>
           </html>
         `);
-      } else {
+      }
+      else {
         res.status(200).send(`
           <html>
             <head>

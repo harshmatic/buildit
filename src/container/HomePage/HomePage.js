@@ -29,7 +29,6 @@ export class HomePage extends Component {
     const { tempratures, city, isFetching, searchString, error } = this.props;
     const isEmpty = tempratures.length === 0;
     const summary = daySummary(groupForecastByDay(tempratures));
-    console.log(city,summary);
     return (
       <div className="HomePage">
         <Header value={searchString} onSearch={this.onSearch} />
