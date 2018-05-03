@@ -25,6 +25,20 @@ export default (req, res) => {
             </body>
           </html>
         `);
+      } else {
+        res.status(200).send(`
+          <html>
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width">
+            </head>
+            <body>
+              <div id='app'></div>
+              <script src='/bundle.js'></script>
+              <link rel="stylesheet" type="text/css" href="bundle.css">
+            </body>
+          </html>
+        `);
       }
     }
     else {
